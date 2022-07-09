@@ -19,7 +19,7 @@ def door():
             print(f"wrong password\nyou have {trials} remaining trials")
             trials -=1
 if door()==0:
-    print("you have entered the wrong password 3 times\ncontact group36@gmail.com")
+    print("you have entered the wrong password 3 times\ncontact group36 members")
 else:
     command_list = ["open","close","quit"]                 #list of accepted commands
     bol = True
