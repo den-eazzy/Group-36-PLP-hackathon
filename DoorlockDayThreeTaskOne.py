@@ -1,10 +1,11 @@
 from datetime import datetime
+import getpass
 def door():
     trials = 2
     password = "abc123"                                     #preset password: use this password to gain acces to the door
     bl = True
     while bl:
-        user_password = input("enter your password: ")
+        user_password = getpass.getpass(prompt = "enter your password: ")
         if password == user_password:                       #password comparison
             print("welcome")
             bl = False                              #once the password is accepted, the boolean variable becomes false hence program breaks out of while loop
