@@ -19,7 +19,7 @@ def door():
 if door()==0:
     print("you have entered the wrong password 3 times\ncontact group36 members")
 else:
-    command_list = ["open","close","quit"]                 #list of accepted commands
+    command_list = ["open","close","quit","lock"]                 #list of accepted commands
     bol = True
     count = 0
     while bol:
@@ -43,10 +43,12 @@ else:
         elif count!=0 and command == "close":
             close_date=datetime.now()                      #datetime.now records last time door was closed
             print("door last closed at ",close_date)
-            print("the door is now locked")
             count = 0                                       #reset the count to zero since door is now closed
         elif count == 0 and command == "close":
-            print("the door is already locked!")           #since count variable is more than  zero, it means the door was already closed
+            print("the door is already closed!")
+        elif command == "lock":
+            print("the door is locked")
+            door()
         else:
             print("goodbye!!")
             bol = False
