@@ -24,6 +24,7 @@ else:
     while bol:
         val = True
         while val:
+            print("command list: ",command_list)
             command = input("enter your command: ")
             if command in command_list:                 #checks to see if command issued is part of the commands suite
                 val = False
