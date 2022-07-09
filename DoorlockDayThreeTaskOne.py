@@ -1,7 +1,4 @@
 from datetime import datetime
-
-status = False
-
 def door():
     trials = 2
     password = "abc123"                                     #preset password: use this password to gain acces to the door
