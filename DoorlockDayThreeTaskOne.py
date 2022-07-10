@@ -48,6 +48,7 @@ else:
             print("the door is already closed!")
         elif command == "lock":
             print("the door is locked")
+            count = 0
             door()
         else:
             print("goodbye!!")
